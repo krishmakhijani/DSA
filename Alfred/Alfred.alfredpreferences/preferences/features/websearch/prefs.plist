@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>1B148BA0-BCDC-4A5E-8AA8-180957FC63C1</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>connect</string>
+			<key>text</key>
+			<string>connect</string>
+			<key>url</key>
+			<string>https://iach.srmist.edu.in/Connect/PortalMain</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
