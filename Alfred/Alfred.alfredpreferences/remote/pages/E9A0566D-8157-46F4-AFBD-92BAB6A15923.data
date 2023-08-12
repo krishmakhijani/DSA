@@ -122,59 +122,9 @@
 		<dict/>
 		<dict/>
 		<dict/>
-		<dict>
-			<key>actionconfig</key>
-			<dict>
-				<key>url</key>
-				<string>https://www.alfredapp.com/help/</string>
-			</dict>
-			<key>actionuid</key>
-			<string>remote.alfred.openurl</string>
-			<key>buttoniconid</key>
-			<string>51FBC5EC-2AF5-45B8-8667-4D8CB2A94CFD</string>
-			<key>buttonlabel</key>
-			<string>Alfred Support</string>
-			<key>itemuid</key>
-			<string>38B7ECCD-DDA7-4548-9C31-508E1633FE49</string>
-		</dict>
-		<dict>
-			<key>actionconfig</key>
-			<dict>
-				<key>url</key>
-				<string>https://www.alfredapp.com/shop/</string>
-			</dict>
-			<key>actionuid</key>
-			<string>remote.alfred.openurl</string>
-			<key>buttoniconid</key>
-			<string>B0F8A85C-5E08-4BDF-831A-091560FCD5B7</string>
-			<key>buttonlabel</key>
-			<string>Buy Alfred</string>
-			<key>itemuid</key>
-			<string>43B35A78-31F5-4DAF-9FD6-F4585CE9B677</string>
-		</dict>
-		<dict>
-			<key>actionconfig</key>
-			<dict>
-				<key>resultsubtitle</key>
-				<string>Look for help on '{query}'</string>
-				<key>resulttitle</key>
-				<string>Search Alfred Help</string>
-				<key>spaces</key>
-				<string>+</string>
-				<key>url</key>
-				<string>https://www.alfredapp.com/search/?q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>actionuid</key>
-			<string>remote.alfred.openurl</string>
-			<key>buttoniconid</key>
-			<string>E00D3F3B-BBD9-4ABA-9C19-AA1B3F4CC0E3</string>
-			<key>buttonlabel</key>
-			<string>Search Help</string>
-			<key>itemuid</key>
-			<string>25EA6F5E-046A-420F-98E3-B03D8B2F52FE</string>
-		</dict>
+		<dict/>
+		<dict/>
+		<dict/>
 		<dict/>
 	</array>
 	<key>itemsall</key>
@@ -289,59 +239,9 @@
 		<dict/>
 		<dict/>
 		<dict/>
-		<dict>
-			<key>actionconfig</key>
-			<dict>
-				<key>url</key>
-				<string>https://www.alfredapp.com/help/</string>
-			</dict>
-			<key>actionuid</key>
-			<string>remote.alfred.openurl</string>
-			<key>buttoniconid</key>
-			<string>51FBC5EC-2AF5-45B8-8667-4D8CB2A94CFD</string>
-			<key>buttonlabel</key>
-			<string>Alfred Support</string>
-			<key>itemuid</key>
-			<string>38B7ECCD-DDA7-4548-9C31-508E1633FE49</string>
-		</dict>
-		<dict>
-			<key>actionconfig</key>
-			<dict>
-				<key>url</key>
-				<string>https://www.alfredapp.com/shop/</string>
-			</dict>
-			<key>actionuid</key>
-			<string>remote.alfred.openurl</string>
-			<key>buttoniconid</key>
-			<string>B0F8A85C-5E08-4BDF-831A-091560FCD5B7</string>
-			<key>buttonlabel</key>
-			<string>Buy Alfred</string>
-			<key>itemuid</key>
-			<string>43B35A78-31F5-4DAF-9FD6-F4585CE9B677</string>
-		</dict>
-		<dict>
-			<key>actionconfig</key>
-			<dict>
-				<key>resultsubtitle</key>
-				<string>Look for help on '{query}'</string>
-				<key>resulttitle</key>
-				<string>Search Alfred Help</string>
-				<key>spaces</key>
-				<string>+</string>
-				<key>url</key>
-				<string>https://www.alfredapp.com/search/?q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>actionuid</key>
-			<string>remote.alfred.openurl</string>
-			<key>buttoniconid</key>
-			<string>E00D3F3B-BBD9-4ABA-9C19-AA1B3F4CC0E3</string>
-			<key>buttonlabel</key>
-			<string>Search Help</string>
-			<key>itemuid</key>
-			<string>25EA6F5E-046A-420F-98E3-B03D8B2F52FE</string>
-		</dict>
+		<dict/>
+		<dict/>
+		<dict/>
 		<dict/>
 		<dict/>
 		<dict/>

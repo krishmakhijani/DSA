@@ -132,24 +132,20 @@
 			<key>itemuid</key>
 			<string>4F0F1573-2E7E-4DB7-B793-84E0275F5FF7</string>
 		</dict>
-		<dict/>
-		<dict/>
-		<dict/>
-		<dict/>
 		<dict>
 			<key>actionconfig</key>
 			<dict>
 				<key>path</key>
-				<string>/</string>
+				<string>~/DOCS/GitHub/DSA</string>
 			</dict>
 			<key>actionuid</key>
 			<string>remote.alfred.launchfile</string>
 			<key>buttoniconid</key>
-			<string>FEEAA321-3480-4AF3-8D11-C34DAE058088</string>
+			<string>28AD7478-D858-4280-ACFC-DE7B05007092</string>
 			<key>buttonlabel</key>
-			<string>Macintosh HD</string>
+			<string>DSA</string>
 			<key>itemuid</key>
-			<string>B40B4626-807E-467F-8C6D-2340C39E7F63</string>
+			<string>28C0FD3D-7DB8-4C36-835C-00C7085B3011</string>
 		</dict>
 		<dict>
 			<key>actionconfig</key>
@@ -170,6 +166,21 @@
 			<key>actionconfig</key>
 			<dict>
 				<key>path</key>
+				<string>/</string>
+			</dict>
+			<key>actionuid</key>
+			<string>remote.alfred.launchfile</string>
+			<key>buttoniconid</key>
+			<string>FEEAA321-3480-4AF3-8D11-C34DAE058088</string>
+			<key>buttonlabel</key>
+			<string>Macintosh HD</string>
+			<key>itemuid</key>
+			<string>B40B4626-807E-467F-8C6D-2340C39E7F63</string>
+		</dict>
+		<dict>
+			<key>actionconfig</key>
+			<dict>
+				<key>path</key>
 				<string>/Users</string>
 			</dict>
 			<key>actionuid</key>
@@ -181,6 +192,9 @@
 			<key>itemuid</key>
 			<string>B39C1BD0-802D-495C-958A-DBF7150662C9</string>
 		</dict>
+		<dict/>
+		<dict/>
+		<dict/>
 		<dict/>
 	</array>
 	<key>itemsall</key>
@@ -305,24 +319,20 @@
 			<key>itemuid</key>
 			<string>4F0F1573-2E7E-4DB7-B793-84E0275F5FF7</string>
 		</dict>
-		<dict/>
-		<dict/>
-		<dict/>
-		<dict/>
 		<dict>
 			<key>actionconfig</key>
 			<dict>
 				<key>path</key>
-				<string>/</string>
+				<string>~/DOCS/GitHub/DSA</string>
 			</dict>
 			<key>actionuid</key>
 			<string>remote.alfred.launchfile</string>
 			<key>buttoniconid</key>
-			<string>FEEAA321-3480-4AF3-8D11-C34DAE058088</string>
+			<string>28AD7478-D858-4280-ACFC-DE7B05007092</string>
 			<key>buttonlabel</key>
-			<string>Macintosh HD</string>
+			<string>DSA</string>
 			<key>itemuid</key>
-			<string>B40B4626-807E-467F-8C6D-2340C39E7F63</string>
+			<string>28C0FD3D-7DB8-4C36-835C-00C7085B3011</string>
 		</dict>
 		<dict>
 			<key>actionconfig</key>
@@ -343,6 +353,21 @@
 			<key>actionconfig</key>
 			<dict>
 				<key>path</key>
+				<string>/</string>
+			</dict>
+			<key>actionuid</key>
+			<string>remote.alfred.launchfile</string>
+			<key>buttoniconid</key>
+			<string>FEEAA321-3480-4AF3-8D11-C34DAE058088</string>
+			<key>buttonlabel</key>
+			<string>Macintosh HD</string>
+			<key>itemuid</key>
+			<string>B40B4626-807E-467F-8C6D-2340C39E7F63</string>
+		</dict>
+		<dict>
+			<key>actionconfig</key>
+			<dict>
+				<key>path</key>
 				<string>/Users</string>
 			</dict>
 			<key>actionuid</key>
@@ -354,6 +379,9 @@
 			<key>itemuid</key>
 			<string>B39C1BD0-802D-495C-958A-DBF7150662C9</string>
 		</dict>
+		<dict/>
+		<dict/>
+		<dict/>
 		<dict/>
 		<dict/>
 		<dict/>
