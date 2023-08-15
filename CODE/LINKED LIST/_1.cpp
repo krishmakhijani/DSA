@@ -39,6 +39,4 @@ int main(){
 
     cout<<"Printing" << endl;
     print(first);
-
-
 }
