@@ -17,22 +17,26 @@ class Node{
 };
 
 void InsertatHead(Node* &head,Node* &tail,int data){ //INSERTING ELEMENT AT THE HEAD 
+    if(head == NULL){
+        Node* newNode = new Node(data);
+        head = newNode;
+        tail = newNode;
+        return;
+    }
+    
     Node* newNode = new Node(data);
     newNode->next=head;
-    if(head==NULL){
-        tail=newNode;
-    }
     head = newNode;
 }
 void InsertatTail(Node* &head,Node* &tail,int data){
+    if(head == NULL){
+        Node* newNode = new Node(data);
+        head = newNode;
+        tail = newNode;
+        return;
+    }
     Node* newNode = new Node(data);
-    if(tail==NULL){
-        tail=newNode;
-        head=newNode;
-    }
-    else{
-        tail->next=newNode;
-    }
+    tail->next=newNode;
     tail=newNode;
     
 }
