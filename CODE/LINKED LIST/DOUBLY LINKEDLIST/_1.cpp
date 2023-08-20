@@ -4,54 +4,82 @@ using namespace std;
 class Node{
     public:
     int data;
-    Node* next;
     Node* prev;
+    Node* next;
     Node(){
         this->data=0;
-        this->next=NULL;
         this->prev=NULL;
+        this->next=NULL;
     }
     Node(int data){
         this->data=data;
-        this->next=NULL;
         this->prev=NULL;
+        this->next=NULL;
     }
 };
-int findlength(Node* &head){
-    int len=0;
-    Node* temp =head;
-    while (temp!=NULL)
-    {
-        temp=temp->next;
+void print(Node* &head){
+    Node* temp = head;
+    while(temp != NULL){
+        cout << temp->data << " ";
+        temp = temp->next;
+    }
+}
+ 
+int getLength(Node* &head){
+    Node* temp = head;
+    int len =0;
+    while(temp != NULL){
+        temp = temp->next;
         len++;
     }
     return len;
 }
-
-void print(Node* &head){
-    Node* temp = head;
-    while(temp!=NULL){
-        cout<<temp->data<<" ";
-    }
-}
-void insertathead(int data,Node* &head,Node* &tail){
+void InsertatHead(Node* &head,Node* &tail,int data){
     if(head==NULL){
-        Node* temp=new Node(data);
-        head=temp;
-        tail=temp;
-        return;
-    } 
-    Node* temp;
-    temp->data=data;
-    temp->next=head;
-    head->prev=temp;
-    head=temp;
+        Node* newNode = new Node(data);
+        newNode->next=head;
+        head->prev=newNode;
+        head=newNode;
+        tail=newNode;
+    }
+    Node* newNode = new Node(data);
+    newNode->next=head;
+    head->prev=newNode;
+    head=newNode;
 }
+void InsertatTail(Node* &head,Node* &tail,int data){
+    if(head==NULL){
+        Node* newNode = new Node(data);
+        newNode->next=head;
+        head->prev=newNode;
+        head=newNode;
+        tail=newNode;
+    }
+    Node* newNode = new Node(data);
+    tail->next=newNode;
+    newNode->prev=tail;
+    tail = newNode;
+}
+
+
 int main(){
+    Node* first = new Node(10);
+    Node* second = new Node(20);
+    Node* third = new Node(30);
+
     Node* head;
     Node* tail;
-    head->next=tail;
-    tail->prev=head;
-    insertathead(8,head,tail);
+    InsertatTail(head,tail,77);
+    
+    head->next=first;
+    first->prev=head;
+    first->next=second;
+    second->prev=first;
+    second->next=third;
+    third->prev= second;
     print(head);
+    InsertatHead(head,tail,100);
+    print(head);
+    
+     
 }
