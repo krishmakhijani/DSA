@@ -17,6 +17,7 @@ class Untitled {
 			System.out.println("ENTER AGAIN INCORRECT GUESS");
 			check();
 		}
+		sc.close();
 	}
 	public static void main(String[] args) {
 		check();
