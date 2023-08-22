@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Untitled {
+class _2 {
 	public static void check(){
 		Scanner sc = new Scanner(System.in);
 		System.out.println("ENTER THE NUMBER :");
