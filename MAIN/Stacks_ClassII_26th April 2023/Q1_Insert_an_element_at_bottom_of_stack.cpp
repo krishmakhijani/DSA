@@ -15,7 +15,7 @@ void solve(stack<int>&s,int target){
     // backtracking
     s.push(topElement);
 }
-void insertAtBottom(stack<int>&s){
+void insertAtBottom(stack<int> &s){
     // Checking whether stack empty or not
     if(s.empty()){
         cout<<"Empty stack"<<endl;
