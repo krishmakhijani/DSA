@@ -118,11 +118,15 @@ int main()
     insertatposition(26,7);
     insertatposition(28,9);
     insertatposition(30,11);
+    printf("BEFORE DELETE\n");
+    print();
     deletenode(1);
     deletenode(3);
     deletenode(5);
     deletenode(7);
     deletenode(9);
+    printf("\n");
     print();
+    printf("\n");
     return 0;
 }
