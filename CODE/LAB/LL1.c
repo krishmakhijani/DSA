@@ -1,4 +1,3 @@
-//double linked list implementing findinglength insertathead insertattail insertatposition deletenode
 #include<stdio.h>
 #include<stdlib.h>
 struct node
@@ -113,7 +112,9 @@ int main()
     deletenode(1);
     deletenode(3);
     printf("\n");
+    printf("AFTER DELETE\n");
     print();
     printf("\n");
     return 0;
 }
+
