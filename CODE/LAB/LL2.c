@@ -1,6 +1,4 @@
 // impelementattion of singly circular linked list
-
-
 #include<stdio.h>
 #include<stdlib.h>
 struct node
@@ -93,4 +91,42 @@ void deleteatposition(int pos)
     struct node *temp1=temp->next;
     temp->next=temp1->next;
     free(temp1);
+}
+void print()
+{
+    struct node *temp=head;
+    do
+    {
+        printf("%d ",temp->data);
+        temp=temp->next;
+    }while(temp!=head);
+    printf("\n");
+}
+int main()
+{
+    insertathead(2);
+    insertathead(4);
+    insertathead(6);
+    insertathead(8);
+    insertathead(10);
+    print();
+    insertattail(12);
+    insertattail(14);
+    insertattail(16);
+    insertattail(18);
+    insertattail(20);
+    print();
+    insertatposition(22,1);
+    insertatposition(24,3);
+    insertatposition(26,5);
+    insertatposition(28,7);
+    insertatposition(30,9);
+    print();
+    deleteatposition(1);
+    deleteatposition(2);
+    deleteatposition(3);
+    deleteatposition(4);
+    deleteatposition(5);
+    print();
+    return 0;
 }
