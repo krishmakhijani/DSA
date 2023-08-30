@@ -10,6 +10,7 @@ int main(){
     st.push(50);
     st.push(70);
     st.push(60);
+    st.push(32);
 
     st.pop();
 
