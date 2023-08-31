@@ -11,6 +11,7 @@ int main(){
     st.push(70);
     st.push(60);
     st.push(32);
+    st.push(34);
 
     st.pop();
 
