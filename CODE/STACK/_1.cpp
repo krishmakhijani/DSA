@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
     stack<int> st;
-    st.push(20);
+    st.push(21);
     st.push(30);
     st.push(40);
     st.push(50);
