@@ -1,24 +1,36 @@
-//Write a Java program to perform arithmetic operations using method overloading.
+// Write a Java program to create a class called Employee with methods called work() and
+// getSalary(). Create a subclass called HRManager that overrides the work() method and
+// adds a new method called addEmployee().
 
-class Arithmetic {
-    public int add(int a, int b) {
-        return a + b;
+class Employee {
+    public void work() {
+        System.out.println("Employee is working");
     }
 
-    public int add(int a, int b, int c) {
-        return add(add(a, b), c);
-    }
-
-    public int add(int a, int b, int c, int d) {
-        return add(add(a, b, c), d);
+    public void getSalary() {
+        System.out.println("Employee salary is 1000");
     }
 }
 
-public class _3 {
+class HRManager extends Employee {
+    public void work() {
+        System.out.println("HRManager is working");
+    }
+
+    public void addEmployee() {
+        System.out.println("HRManager is adding employee");
+    }
+}
+
+public class _4 {
     public static void main(String[] args) {
-        Arithmetic a = new Arithmetic();
-        System.out.println(a.add(1, 2));
-        System.out.println(a.add(1, 2, 3));
-        System.out.println(a.add(1, 2, 3, 4));
+        Employee employee = new Employee();
+        employee.work();
+        employee.getSalary();
+
+        HRManager hrManager = new HRManager();
+        hrManager.work();
+        hrManager.getSalary();
+        hrManager.addEmployee();
     }
 }
