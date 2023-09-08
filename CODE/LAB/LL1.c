@@ -105,6 +105,7 @@ int main()
 {
     insertathead(2);
     insertathead(4);
+    insertathead(6);
     insertattail(12);
     insertattail(14);
     insertatposition(22,3);
