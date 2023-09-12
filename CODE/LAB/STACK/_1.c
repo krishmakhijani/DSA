@@ -1,4 +1,3 @@
-//stack implementation using arrays
 #include<stdio.h>
 #include<stdlib.h>
 #define MAX 5
@@ -63,5 +62,4 @@ void main() {
     printf("Invalid choice\n");
     }
     }
-    
 }
