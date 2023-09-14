@@ -1,31 +1,52 @@
-// Write a JAVA program to find numbers between 100 and 400 (both
-// included) where each digit of a number is an even number. The numbers
-// obtained should be printed in a comma-separated sequence.
+// Create a java program for the following
+// Use ThreadA to find number of digits present in the string k and store into variable de, finally
+// print the value of dc(output format: ThreadA:digitscount).
+// Use ThreadB to find number of alphabetic present in the string k and store into variable cc, finally
+// print the value of cc(output format: ThreadB: digitscount).
 
-import java.util.Scanner;
+class ThreadA implements Runnable {
+    String k;
+    int dc;
+
+    ThreadA(String k) {
+        this.k = k;
+    }
+
+    public void run() {
+        for (int i = 0; i < k.length(); i++) {
+            if (Character.isDigit(k.charAt(i))) {
+                dc++;
+            }
+        }
+        System.out.println("ThreadA: " + dc);
+    }
+}
+
+class ThreadB implements Runnable {
+    String k;
+    int cc;
+
+    ThreadB(String k) {
+        this.k = k;
+    }
+
+    public void run() {
+        for (int i = 0; i < k.length(); i++) {
+            if (Character.isAlphabetic(k.charAt(i))) {
+                cc++;
+            }
+        }
+        System.out.println("ThreadB: " + cc);
+    }
+}
 
 public class _7 {
-    
-    public static void check(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("ENTER THE NUMBER :");
-        int n = sc.nextInt();
-        if (n<1&&n>9) {
-            System.out.println("NOT POSSIBLE");
-            System.out.println("RE-ENTER");
-            check();
-        }
-        if(n==6){
-            System.out.println("Correct");
-        }
-        else {
-            System.out.println("ENTER AGAIN INCORRECT GUESS");
-            check();
-        }
-        sc.close();
-    }
     public static void main(String[] args) {
-        check();
-        
+        String k = "Hello123";
+        Thread t1 = new Thread(new ThreadA(k));
+        Thread t2 = new Thread(new ThreadB(k));
+
+        t1.start();
+        t2.start();
     }
 }

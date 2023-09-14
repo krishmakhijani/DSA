@@ -1,28 +1,26 @@
-// Write a JAVA program that accepts a string and calculate the number
-// of digits and letters.
+// Write a java program for multithread in which user thread and thread started from main method
+// invoked at a time each thread sleep for 1 sec.
 
-import java.util.Scanner;
-public class _5 {
-    
-    public static void check(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("ENTER THE STRING :");
-        String n = sc.nextLine();
-        int count = 0;
-        int count1 = 0;
-        for (int i = 0; i < n.length(); i++) {
-            if (Character.isDigit(n.charAt(i))) {
-                count++;
-            }
-            else if (Character.isLetter(n.charAt(i))) {
-                count1++;
-            }
+class UserThread implements Runnable {
+    public void run() {
+        try {
+            Thread.sleep(1000);
+            System.out.println("UserThread");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
-        System.out.println("NUMBER OF DIGITS : "+count);
-        System.out.println("NUMBER OF LETTERS : "+count1);
-        sc.close();
     }
+}
+
+public class _5 {
     public static void main(String[] args) {
-        check();
+        Thread t1 = new Thread(new UserThread());
+        t1.start();
+        try {
+            Thread.sleep(1000);
+            System.out.println("Main");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -1,22 +1,24 @@
-// Write a JAVA program that accepts a word from the user and reverse
-// it.
+// Write a java program in which thread sleep for 6 sec in the loop in reverse order from 5 to 1 and change
+// the name of thread.
 
-import java.util.Scanner;
-
-class _4 {
-    public static void check(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("ENTER THE WORD :");
-        String n = sc.nextLine();
-        String rev = "";
-        for (int i = n.length()-1; i >= 0; i--) {
-            rev = rev + n.charAt(i);
+class ThreadNameChanger implements Runnable {
+    public void run() {
+        for (int i = 5; i > 0; i--) {
+            try {
+                Thread.sleep(6);
+                Thread.currentThread().setName("ThreadNameChanger");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
-        System.out.println(rev);
-        sc.close();
     }
-    public static void main(String[] args) {
-        check();
-    }
-    
 }
+
+public class _4 {
+    public static void main(String[] args) {
+        Thread t1 = new Thread(new ThreadNameChanger());
+        t1.start();
+        System.out.println(t1.getName());
+    }
+}
+

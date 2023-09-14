@@ -1,27 +1,20 @@
-// *
-// * *
-// * * *
-// * * * *
-// * * * * *
-// * * * *
-// * * *
-// * *
-// *
+// Write a java program in which thread sleep for 5 sec and change the name of thread.
+
+class ThreadNameChanger implements Runnable {
+    public void run() {
+        try {
+            Thread.sleep(5);
+            Thread.currentThread().setName("ThreadNameChanger");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}
 
 public class _3 {
-	public static void main(String[] args) {
-		int n = 5;
-		for (int i = 1; i <= 2 * n - 1; i++) {
-			if (i <= n) {
-				for (int j = 1; j <= i; j++) {
-					System.out.print("* ");
-				}
-			} else {
-				for (int j = 1; j <= 2 * n - i; j++) {
-					System.out.print("* ");
-				}
-			}
-			System.out.println();
-		}
-	}
+    public static void main(String[] args) {
+        Thread t1 = new Thread(new ThreadNameChanger());
+        t1.start();
+        System.out.println(t1.getName());
+    }
 }
