@@ -1,7 +1,5 @@
 package week 8;
 
-// 1. Write a simple application program to establish JDBC connection.
-
 import java.sql.*;
 
 public class _1 {

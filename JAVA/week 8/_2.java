@@ -1,7 +1,5 @@
 package week 8;
 
-// Implementation of airline reservation system using JDBC.
-
 import java.sql.*;
 
 public class _2 {
