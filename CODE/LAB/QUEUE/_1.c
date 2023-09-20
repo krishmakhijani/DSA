@@ -1,5 +1,3 @@
-//queue implementation using arrays
-
 #include<stdio.h>
 #include<stdlib.h>
 #define MAX 5
@@ -51,11 +49,12 @@ void display()
 
 int main()
 {
+    printf("ENTER THE CHOICE\n");
+    printf("1.ENQUEUE\n2.DEQUEUE\n3.DISPLAY\n4.EXIT\n");
     int ch,x;
     while(1)
     {
-        printf("1.Enqueue\n2.Dequeue\n3.Display\n4.Exit\n");
-        printf("Enter your choice\n");
+        printf("Enter the choice\n");
         scanf("%d",&ch);
         switch(ch)
         {
@@ -68,8 +67,7 @@ int main()
             case 3: display();
                     break;
             case 4: exit(0);
-            default: printf("Invalid choice\n");
+            default: printf("Wrong choice\n");
         }
     }
-    return 0;
 }

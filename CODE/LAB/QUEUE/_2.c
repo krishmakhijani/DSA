@@ -1,5 +1,3 @@
-//queue implementation using linked list
-
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -61,24 +59,31 @@ void display()
 
 int main()
 {
+    printf("ENTER THE CHOICE\n");
+    printf("1.ENQUEUE\n2.DEQUEUE\n3.DISPLAY\n4.EXIT\n");
     int ch,x;
     while(1)
     {
-        printf("1.Enqueue\n2.Dequeue\n3.Display\n4.Exit\n");
-        printf("Enter your choice\n");
+        printf("Enter the choice\n");
         scanf("%d",&ch);
         switch(ch)
         {
             case 1: printf("Enter the element to be inserted\n");
-                    scanf("%d",&x);
-                    enqueue(x);
+                    int n;
+                    printf("ENTER THE NUMBER OF ELEMENTS TO BE INSERTED\n");
+                    scanf("%d",&n);
+                    for(int i=0;i<n;i++)
+                    {
+                        scanf("%d",&x);
+                        enqueue(x);
+                    }
                     break;
             case 2: dequeue();
                     break;
             case 3: display();
                     break;
             case 4: exit(0);
+            default: printf("Wrong choice\n");
         }
     }
-    return 0;
 }
