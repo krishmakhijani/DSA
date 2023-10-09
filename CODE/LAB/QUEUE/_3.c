@@ -1,5 +1,3 @@
-//circular queue implementation
-
 #include<stdio.h>
 #include<stdlib.h>
 #define MAX 5
@@ -16,8 +14,7 @@ void enqueue(int data){
     }
     else{
         rear = (rear+1)%MAX;
-        queue[rear] = data;
-    }
+        queue[rear] = data;}
     printf("REAR IS : %d\n",rear);
 }
 
