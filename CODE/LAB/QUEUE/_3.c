@@ -10,7 +10,7 @@ void enqueue(int data){
         queue[rear] = data;
     }
     if(front-rear == 1 || rear-front == MAX-1){
-        printf("Queue is full\n");
+        printf("queue is full\n");
     }
     else{
         rear = (rear+1)%MAX;
@@ -21,7 +21,7 @@ void enqueue(int data){
 int dequeue(){
     int temp;
     if(front == -1 && rear == -1){
-        printf("Queue is empty\n");
+        printf("queue is empty\n");
         return -1;
     }
     if(front == rear){
@@ -41,18 +41,17 @@ int dequeue(){
 void display(){
     int i;
     if(front == -1 && rear == -1){
-        printf("Queue is empty\n");
+        printf("queue is empty\n");
     }
-    else{
-        printf("Queue elements are: ");
-        for(i=front;i!=rear;i=(i+1)%MAX){
-            printf("%d ",queue[i]);
-        }
-        printf("%d",queue[i]);
-        printf("\n FRONT IS : %d\n",front);
-        printf("\n REAR IS : %d\n",rear);
+    else {
+    printf("\n Front -> %d ", front);
+    printf("\n queue -> ");
+    for (i = front+1; i != rear; i = (i + 1) % MAX) {
+        printf("%d ", queue[i]);
     }
-
+    printf("%d ", queue[i]);
+    printf("\n Rear -> %d \n", rear);
+    }
 }
 
 int main()
@@ -71,7 +70,7 @@ int main()
                     break;
             case 2: item=dequeue();
                     if(item==-1)
-                        printf("Queue is empty\n");
+                        printf("queue is empty\n");
                     else
                         printf("Deleted element is %d\n",item);
                     break;
