@@ -94,6 +94,64 @@ void postorder(Node* root){
     postorder(root->right);
     cout<<root->data<<" ";
 }
+int findMax(Node *root)
+{
+    Node *temp = root;
+    if (temp == NULL)
+        return -1;
+    while (temp->right != NULL)
+    {
+        temp = temp->right;
+    }
+    return temp->data;
+}
+Node *deleteNodeInBST(Node *root, int target)
+{
+    // Base case
+    if (root == NULL)
+    {
+        return root;
+    }
+    if (root->data == target)
+    {
+        // Case 1 : Leaf Node
+        if (root->left == NULL && root->right == NULL)
+        {
+            return NULL;
+        }
+        // Case 2 : Left child not exist
+        else if (root->left == NULL && root->right != NULL)
+        {
+            Node *child = root->right;
+            return child;
+        }
+        // Case 3 : Right child not exist
+        else if (root->left != NULL && root->right == NULL)
+        {
+            Node *child = root->left;
+            return child;
+        }
+        // Case 4 : Both child exists
+        else
+        {
+            int inorderPred = findMax(root->left);
+            root->data = inorderPred;
+            root->left = deleteNodeInBST(root->left, inorderPred);
+            return root;
+        }
+    }
+    else if (root->data < target)
+    {
+        // right
+        root->right = deleteNodeInBST(root->right, target);
+    }
+    else
+    {
+        // left
+        root->left = deleteNodeInBST(root->left, target);
+    }
+    return root;
+}
 int main(){
     int choice;
     cout << "Enter the choice" << endl;
@@ -102,10 +160,11 @@ int main(){
     cout << "3. Inorder Traversal" << endl;
     cout << "4. Preorder Traversal" << endl;
     cout << "5. Postorder Traversal" << endl;
-    cout << "6. Exit" << endl;
+    cout << "6. Delete" << endl;
+    cout << "7. Exit" << endl;
     cin >> choice;
     Node* root = NULL;
-    while(choice != 6){
+    while(true){
         switch(choice){
             case 1:
                 cout<<"Enter the data for Node"<<endl;
@@ -123,6 +182,12 @@ int main(){
             case 5:
                 postorder(root);
                 break;
+            case 6:
+                int target;
+                cout<<"Enter the target"<<endl;
+                cin>>target;
+                root = deleteNodeInBST(root,target);
+                break;
             default:
                 cout<<"Invalid Choice"<<endl;
         }
@@ -132,7 +197,7 @@ int main(){
         cout << "3. Inorder Traversal" << endl;
         cout << "4. Preorder Traversal" << endl;
         cout << "5. Postorder Traversal" << endl;
-        cout << "6. Exit" << endl;
+        cout << "6. Delete" << endl;
         cin >> choice;
     }
     return 0;
