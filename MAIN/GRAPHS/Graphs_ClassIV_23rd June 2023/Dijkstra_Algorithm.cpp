@@ -9,7 +9,7 @@ using namespace std;
 
 class Graph{
     public:
-    unordered_map<int,list<pair<int,int>>>adjList;
+    unordered_map<int,list<pair<int,int> > >adjList;
     void addEdge(int u,int v,int wt,bool direction){
         // direction = 1 -> undirected
         // direction = 0 -> directed
@@ -29,7 +29,7 @@ class Graph{
     }
     void dijkstraAlgo(int src,int n){
         vector<int>dist(n,INT_MAX);
-        set<pair<int,int>>st;
+        set<pair<int,int> >st;
         dist[src] = 0;
         st.insert({0,src});
         while(!st.empty()){
@@ -45,7 +45,7 @@ class Graph{
                     // update distance
                     // finding entry in the set
                     auto result = st.find({dist[nbr.first],nbr.first});
-                    // if found -> delete 
+                    // if found -> delete
                     if(result != st.end()){
                         st.erase(result);
                     }

@@ -3,12 +3,13 @@
 #include<list>
 using namespace std;
 class Graph{
-
-    public:
+public:
     vector<vector<int> > adjList;
+
     void addEdge(int u, int v, bool direction){
         // direction = 0 -> undirected
         // direction = 1 -> directed
+
         int n = max(u, v) + 1;
         if (adjList.size() < n){
             adjList.resize(n);
@@ -19,6 +20,7 @@ class Graph{
         if (direction == 0)
             adjList[v].push_back(u); // edge created from v to u
     }
+
     void printAdjList(){
         for (int u = 0; u < adjList.size(); u++){
             cout << u << "-> ";
@@ -29,7 +31,6 @@ class Graph{
         }
     }
 };
-
 int main(){
     Graph g;
     cout << " Enter the number of nodes " << endl;

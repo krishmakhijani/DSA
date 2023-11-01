@@ -5,7 +5,7 @@ int main(){
     int n;
     cout<<"Enter the number of nodes "<<endl;
     cin>>n;
-    vector<vector<int>>adj(n,vector<int>(n,0));
+    vector<vector<int> >adj(n,vector<int>(n,0));
     int e;
     cout<<"Enter the number of edges"<<endl;
     cin>>e;
